@@ -364,3 +364,68 @@ code { font-family: ui-monospace, "Cascadia Mono", Menlo, Consolas, monospace; f
   .nick-a, .nick-b { font-size: 17px; }
   .tap-sm { padding: 8px 14px; font-size: 14px; }
 }
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Статьи (2026-09-27): колонка лонгрида, закреп, хаб stati.html,
+   «Читайте по теме» на страницах приложений и «Ещё статьи» внизу статьи.
+   Имена свои: longread, pinned, threads/thread, reposts/repost, moreposts.
+   Контраст: --mute на --teal-soft ≈ 6:1, --teal на --teal-soft ≈ 6.6:1,
+   --coral-ink на --paper 6.2:1 — те же пары, что уже посчитаны в шапке.
+   ══════════════════════════════════════════════════════════════════════════ */
+.longread { padding-top: clamp(22px, 4vw, 44px); }
+.longread-head { max-width: 780px; min-width: 0; }
+.longread-head h1 { font-size: clamp(29px, 4.4vw, 46px); line-height: 1.1; margin: 14px 0 16px; }
+.longread-lede { font-size: clamp(17px, 1.7vw, 19px); color: var(--mute); }
+.longread-meta { font-size: 14px; color: var(--mute); margin-top: 12px; }
+.longread-body { max-width: 720px; min-width: 0; margin-top: 26px; font-size: 17.5px; line-height: 1.72; overflow-wrap: break-word; }
+.longread-body h2 { font-size: clamp(23px, 3vw, 30px); line-height: 1.2; margin: 44px 0 14px; }
+.longread-body h3 { margin: 28px 0 8px; }
+.longread-body p { margin-bottom: 16px; }
+.longread-body ul, .longread-body ol { margin: 0 0 20px; padding-left: 24px; }
+.longread-body li { margin-bottom: 10px; padding-left: 4px; }
+.longread-body li::marker { color: var(--coral-ink); font-weight: 800; }
+.longread-body .tablewrap { margin: 18px 0 22px; }
+.longread-body .tablewrap table { font-size: 15px; line-height: 1.5; }
+
+/* Закреп: короткая справка о сервисе в начале статьи */
+.pinned { background: var(--paper); border: 1px solid var(--line); border-left: 5px solid var(--teal); border-radius: var(--r-s); padding: 14px 18px; font-size: 15.5px; line-height: 1.6; color: var(--mute); }
+.longread-body > .pinned { margin: 0 0 8px; }
+
+/* Хаб: карточки статей */
+.threads { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 30px; }
+.thread { background: var(--paper); border: 1px solid var(--line); border-radius: var(--r); padding: 22px 22px 20px; box-shadow: var(--shadow); min-width: 0; transition: border-color .15s ease; }
+.thread:hover { border-color: var(--teal); }
+.thread-tag { display: block; font-family: var(--round-font); font-size: 13.5px; font-weight: 750; color: var(--coral-ink); margin-bottom: 8px; }
+.thread h2 { font-size: clamp(20px, 2.2vw, 23px); line-height: 1.25; margin-bottom: 8px; }
+.thread h2 a { color: var(--ink); text-decoration: none; }
+.thread h2 a:hover { color: var(--teal); text-decoration: underline; }
+.thread p { color: var(--mute); font-size: 15.5px; }
+.thread-go { display: inline-block; margin-top: 12px; font-weight: 700; }
+.thread-go::after { content: " →"; }
+
+/* «Читайте по теме» на страницах приложений и блок статей на главной */
+.reposts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; max-width: 880px; }
+.reposts-wide { grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: none; }
+.repost { display: block; text-decoration: none; background: var(--teal-soft); border-radius: var(--r-s); padding: 16px 18px; min-width: 0; color: var(--ink); transition: box-shadow .15s ease; }
+.repost:hover { color: var(--ink); box-shadow: inset 0 0 0 2px var(--teal); }
+.repost b { display: block; font-family: var(--round-font); font-weight: 800; font-size: 17px; line-height: 1.3; color: var(--teal); margin-bottom: 4px; }
+.repost span { display: block; font-size: 14.5px; line-height: 1.45; color: var(--mute); }
+
+/* «Ещё статьи» внизу статьи */
+.moreposts { list-style: none; margin: 0; padding: 0; max-width: 880px; display: grid; gap: 8px; }
+.moreposts a { display: block; background: var(--paper); border: 1px solid var(--line); border-radius: var(--r-s); padding: 13px 16px; font-family: var(--round-font); font-weight: 750; text-decoration: none; min-width: 0; }
+.moreposts a:hover { border-color: var(--teal); }
+
+@media (prefers-reduced-motion: reduce) {
+  .thread, .repost { transition: none; }
+}
+
+@media (max-width: 900px) {
+  .reposts-wide { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 640px) {
+  .threads, .reposts, .reposts-wide { grid-template-columns: minmax(0, 1fr); }
+  .longread-body { font-size: 16.5px; }
+  .longread-body h2 { margin-top: 36px; }
+}
