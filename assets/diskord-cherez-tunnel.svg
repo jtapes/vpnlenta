@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 590" width="360" height="590" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" role="img" aria-labelledby="t d">
+  <title id="t">ВПН для Дискорда: что идёт через туннель</title>
+  <desc id="d">Схема: телефон или компьютер с Karing, туннель до иностранного сервера, серверы Дискорда. Вход и сообщения, картинки и файлы, обновления клиента идут через туннель. Голос и стрим экрана через наш туннель не обещаем.</desc>
+  <rect x="1" y="1" width="358" height="588" rx="22" fill="#ffffff" stroke="#e7dccd" stroke-width="2"/>
+  <text x="180" y="42" text-anchor="middle" font-size="18" font-weight="800" fill="#182a2b">Что из Дискорда идёт</text>
+  <text x="180" y="66" text-anchor="middle" font-size="18" font-weight="800" fill="#182a2b">через туннель</text>
+
+  <rect x="24" y="86" width="312" height="48" rx="14" fill="#f3eadc"/>
+  <text x="180" y="116" text-anchor="middle" font-size="16" font-weight="700" fill="#182a2b">ПК или телефон с Karing</text>
+  <path d="M180 134 V162" stroke="#0c5a57" stroke-width="3"/>
+  <path d="M172 156 L180 166 L188 156" fill="none" stroke="#0c5a57" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <rect x="24" y="170" width="312" height="48" rx="14" fill="#0c5a57"/>
+  <text x="180" y="200" text-anchor="middle" font-size="16" font-weight="700" fill="#fbf6ee">Туннель до иностранного сервера</text>
+  <path d="M180 218 V246" stroke="#0c5a57" stroke-width="3"/>
+  <path d="M172 240 L180 250 L188 240" fill="none" stroke="#0c5a57" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <rect x="24" y="254" width="312" height="276" rx="16" fill="#fbf6ee" stroke="#e7dccd" stroke-width="2"/>
+  <text x="180" y="284" text-anchor="middle" font-size="16" font-weight="800" fill="#182a2b">Серверы Дискорда</text>
+
+  <rect x="38" y="300" width="284" height="48" rx="12" fill="#dcefeb"/>
+  <text x="52" y="330" font-size="16" fill="#182a2b">Вход и сообщения</text>
+  <path d="M238 324l5 5 l10 -11" fill="none" stroke="#0c5a57" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="308" y="330" text-anchor="end" font-size="16" font-weight="800" fill="#0c5a57">идёт</text>
+
+  <rect x="38" y="356" width="284" height="48" rx="12" fill="#dcefeb"/>
+  <text x="52" y="386" font-size="16" fill="#182a2b">Картинки и файлы</text>
+  <path d="M238 380l5 5 l10 -11" fill="none" stroke="#0c5a57" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="308" y="386" text-anchor="end" font-size="16" font-weight="800" fill="#0c5a57">идёт</text>
+
+  <rect x="38" y="412" width="284" height="48" rx="12" fill="#dcefeb"/>
+  <text x="52" y="442" font-size="16" fill="#182a2b">Обновления клиента</text>
+  <path d="M238 436l5 5 l10 -11" fill="none" stroke="#0c5a57" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="308" y="442" text-anchor="end" font-size="16" font-weight="800" fill="#0c5a57">идёт</text>
+
+  <rect x="39" y="469" width="282" height="46" rx="12" fill="none" stroke="#b9b0a4" stroke-width="2" stroke-dasharray="7 6"/>
+  <text x="52" y="498" font-size="16" fill="#4a5b5c">Голос и стрим</text>
+  <text x="308" y="498" text-anchor="end" font-size="16" font-weight="800" fill="#b0391f">не обещаем</text>
+
+  <text x="180" y="562" text-anchor="middle" font-size="16" fill="#4a5b5c">Российские сайты идут мимо туннеля</text>
+</svg>
