@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 590" width="360" height="590" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" role="img" aria-labelledby="t d">
-  <title id="t">ВПН для Дискорда: что идёт через туннель</title>
+  <title id="t">Дискорд: что идёт через туннель</title>
   <desc id="d">Схема: телефон или компьютер с Karing, туннель до иностранного сервера, серверы Дискорда. Вход и сообщения, картинки и файлы, обновления клиента идут через туннель. Голос и стрим экрана через наш туннель не обещаем.</desc>
   <rect x="1" y="1" width="358" height="588" rx="22" fill="#ffffff" stroke="#e7dccd" stroke-width="2"/>
   <text x="180" y="42" text-anchor="middle" font-size="18" font-weight="800" fill="#182a2b">Что из Дискорда идёт</text>
